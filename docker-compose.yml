@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  site:
+    build: .
+    container_name: start_cloud
+    ports:
+      - "8082:80"
