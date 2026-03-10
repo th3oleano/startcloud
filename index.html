@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Start Cloud - Cloud Gaming</title>
+  <title>Start Cloud - Cloud Gaming</title>3
+
+  <script>
+    if (window.location.port !== "8082") {
+      window.location.href = "http://" + window.location.hostname + ":8082" + window.location.pathname + window.location.search;
+    }
+  </script>
 
   <style>
     /* Reset */
     * {
-      margin: 0; padding: 0; box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     body {
@@ -25,7 +34,9 @@
 
     header {
       position: fixed;
-      top: 0; left: 0; right: 0;
+      top: 0;
+      left: 0;
+      right: 0;
       background: #1f1f1f;
       padding: 5px 0;
       display: flex;
@@ -265,7 +276,9 @@
         font-size: 2rem;
       }
 
-      .why-choose h2, .games-section h2, .plans-section h2 {
+      .why-choose h2,
+      .games-section h2,
+      .plans-section h2 {
         font-size: 1.8rem;
       }
 
@@ -275,151 +288,158 @@
     }
   </style>
 </head>
+
 <body>
 
-<header>
-  <div class="menu-container">
-    <img src="img/logo.png" alt="Logo">
-    <nav>
-      <a href="#inicio">Início</a>
-      <a href="#assinatura">Assinatura</a>
-      <a href="#discord">Discord</a>
-      <a href="#faq">FAQ</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-
-  <section class="hero" id="inicio">
-    <h1>Jogue em qualquer lugar com <br><span id="typing-text"></span></h1>
-    <p>Conecte-se a uma infraestrutura de máquinas virtuais de alta performance, permitindo que você jogue seus títulos favoritos em qualquer dispositivo com qualidade gráfica superior e mínima latência.</p>
-  </section>
-
- 
-  <section class="why-choose">
-    <h2>Por que escolher a START CLOUD</h2>
-    <p>Nossa plataforma proporciona uma experiência de cloud gaming de excelência, desenvolvida com tecnologia avançada para assegurar desempenho superior, alta qualidade visual e acessibilidade otimizada.</p>
-  </section>
-
-  <section class="games-section">
-    <h2>Jogue seus títulos favoritos</h2>
-    <div class="games-grid">
-      <article class="game-card">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg" alt="GTAV" />
-        <div class="game-info">
-          <h3>GTAV RP</h3>
-          <p>Steam</p>
-        </div>
-      </article>
-      <article class="game-card">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/381210/header.jpg" alt="Dead by Daylight" />
-        <div class="game-info">
-          <h3>Dead by Daylight</h3>
-          <p>Steam</p>
-        </div>
-      </article>
-      <article class="game-card">
-        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1593500/header.jpg" alt="God of War" />
-        <div class="game-info">
-          <h3>God of War</h3>
-          <p>Steam</p>
-        </div>
-      </article>
+  <header>
+    <div class="menu-container">
+      <img src="img/logo.png" alt="Logo">
+      <nav>
+        <a href="#inicio">Início</a>
+        <a href="#assinatura">Assinatura</a>
+        <a href="#discord">Discord</a>
+        <a href="#faq">FAQ</a>
+      </nav>
     </div>
-  </section>
+  </header>
+
+  <main>
+
+    <section class="hero" id="inicio">
+      <h1>Jogue em qualquer lugar com <br><span id="typing-text"></span></h1>
+      <p>Conecte-se a uma infraestrutura de máquinas virtuais de alta performance, permitindo que você jogue seus
+        títulos favoritos em qualquer dispositivo com qualidade gráfica superior e mínima latência.</p>
+    </section>
 
 
-  <section class="plans-section" id="assinatura">
-    <h2>Escolha o plano ideal para você</h2>
-    <p class="plans-intro">Disponibilizamos diferentes configurações de desempenho para atender com precisão às suas demandas, desde jogos casuais até títulos de alto nível técnico e exigência gráfica.</p>
-    <div class="plans-grid">
-      <article class="plan-card">
-        <h3>Plano Básico</h3>
-        <div class="price">R$35,00 / 30 Dias</div>
-        <ul>
-          <li>2GB RAM</li>
-          <li>120GB SSD</li>
-          <li>Sistema: Linux</li>
-        </ul>
-        <button>Assinar</button>
-      </article>
+    <section class="why-choose">
+      <h2>Por que escolher a START CLOUD</h2>
+      <p>Nossa plataforma proporciona uma experiência de cloud gaming de excelência, desenvolvida com tecnologia
+        avançada para assegurar desempenho superior, alta qualidade visual e acessibilidade otimizada.</p>
+    </section>
 
-      <article class="plan-card">
-        <h3>Plano Start Cloud</h3>
-        <div class="price">R$8,00 / HORA</div>
-        <ul>
-          <li>16GB RAM</li>
-          <li>1TB SSD</li>
-          <li>GTX1660 SUPER</li>
-        </ul>
-        <button>Assinar</button>
-      </article>
-      
-      <article class="plan-card">
-        <h3>Plano Intermediário</h3>
-        <div class="price">R$250,00 / 30 Dias</div>
-        <ul>
-          <li>32GB RAM</li>
-          <li>1TB SSD</li>
-          <li>RTX 4060</li>
-        </ul>
-        <button>Assinar</button>
-      </article>
-    </div>
-  </section>
+    <section class="games-section">
+      <h2>Jogue seus títulos favoritos</h2>
+      <div class="games-grid">
+        <article class="game-card">
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg" alt="GTAV" />
+          <div class="game-info">
+            <h3>GTAV RP</h3>
+            <p>Steam</p>
+          </div>
+        </article>
+        <article class="game-card">
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/381210/header.jpg" alt="Dead by Daylight" />
+          <div class="game-info">
+            <h3>Dead by Daylight</h3>
+            <p>Steam</p>
+          </div>
+        </article>
+        <article class="game-card">
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1593500/header.jpg" alt="God of War" />
+          <div class="game-info">
+            <h3>God of War</h3>
+            <p>Steam</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-  <section id="discord" style="text-align:center; padding: 80px 20px; color:#ccc; background:#1f1f1f; border-radius: 12px; margin-bottom: 70px;">
-    <h2>Discord</h2>
-    <p>Entre no nosso servidor Discord para suporte e comunidade.</p>
-    <a href="https://discord.gg/v73jHStnzf" target="_blank" style="color:#b8aa34;">Acesse o Discord</a>
-  </section>
 
-  <section id="faq" style="text-align:center; padding: 80px 20px; color:#ccc; background:#1f1f1f; border-radius: 12px; margin-bottom: 70px;">
-    <h2>FAQ</h2>
-    <p>Perguntas frequentes sobre a START CLOUD.</p>
-  </section>
+    <section class="plans-section" id="assinatura">
+      <h2>Escolha o plano ideal para você</h2>
+      <p class="plans-intro">Disponibilizamos diferentes configurações de desempenho para atender com precisão às suas
+        demandas, desde jogos casuais até títulos de alto nível técnico e exigência gráfica.</p>
+      <div class="plans-grid">
+        <article class="plan-card">
+          <h3>Plano Básico</h3>
+          <div class="price">R$35,00 / 30 Dias</div>
+          <ul>
+            <li>2GB RAM</li>
+            <li>120GB SSD</li>
+            <li>Sistema: Linux</li>
+          </ul>
+          <button>Assinar</button>
+        </article>
 
-</main>
+        <article class="plan-card">
+          <h3>Plano Start Cloud</h3>
+          <div class="price">R$8,00 / HORA</div>
+          <ul>
+            <li>16GB RAM</li>
+            <li>1TB SSD</li>
+            <li>GTX1660 SUPER</li>
+          </ul>
+          <button>Assinar</button>
+        </article>
 
-<footer>
-  &copy; 2025 START CLOUD. Todos os direitos reservados.
-</footer>
+        <article class="plan-card">
+          <h3>Plano Intermediário</h3>
+          <div class="price">R$250,00 / 30 Dias</div>
+          <ul>
+            <li>32GB RAM</li>
+            <li>1TB SSD</li>
+            <li>RTX 4060</li>
+          </ul>
+          <button>Assinar</button>
+        </article>
+      </div>
+    </section>
 
-<script>
-  const texts = ["Start Cloud"];
-  const typingSpeed = 150;
-  const erasingSpeed = 100;
-  const delayBetweenTexts = 4000;
-  let textIndex = 0;
-  let charIndex = 0;
-  const typingText = document.getElementById('typing-text');
+    <section id="discord"
+      style="text-align:center; padding: 80px 20px; color:#ccc; background:#1f1f1f; border-radius: 12px; margin-bottom: 70px;">
+      <h2>Discord</h2>
+      <p>Entre no nosso servidor Discord para suporte e comunidade.</p>
+      <a href="https://discord.gg/v73jHStnzf" target="_blank" style="color:#b8aa34;">Acesse o Discord</a>
+    </section>
 
-  function type() {
-    if(charIndex < texts[textIndex].length) {
-      typingText.textContent += texts[textIndex].charAt(charIndex);
-      charIndex++;
-      setTimeout(type, typingSpeed);
-    } else {
-      setTimeout(erase, delayBetweenTexts);
+    <section id="faq"
+      style="text-align:center; padding: 80px 20px; color:#ccc; background:#1f1f1f; border-radius: 12px; margin-bottom: 70px;">
+      <h2>FAQ</h2>
+      <p>Perguntas frequentes sobre a START CLOUD.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2025 START CLOUD. Todos os direitos reservados.
+  </footer>
+
+  <script>
+    const texts = ["Start Cloud"];
+    const typingSpeed = 150;
+    const erasingSpeed = 100;
+    const delayBetweenTexts = 4000;
+    let textIndex = 0;
+    let charIndex = 0;
+    const typingText = document.getElementById('typing-text');
+
+    function type() {
+      if (charIndex < texts[textIndex].length) {
+        typingText.textContent += texts[textIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, typingSpeed);
+      } else {
+        setTimeout(erase, delayBetweenTexts);
+      }
     }
-  }
 
-  function erase() {
-    if(charIndex > 0) {
-      typingText.textContent = texts[textIndex].substring(0, charIndex - 1);
-      charIndex--;
-      setTimeout(erase, erasingSpeed);
-    } else {
-      textIndex = (textIndex + 1) % texts.length;
-      setTimeout(type, typingSpeed);
+    function erase() {
+      if (charIndex > 0) {
+        typingText.textContent = texts[textIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, erasingSpeed);
+      } else {
+        textIndex = (textIndex + 1) % texts.length;
+        setTimeout(type, typingSpeed);
+      }
     }
-  }
 
-  document.addEventListener("DOMContentLoaded", () => {
-    if(texts.length) setTimeout(type, delayBetweenTexts);
-  });
-</script>
+    document.addEventListener("DOMContentLoaded", () => {
+      if (texts.length) setTimeout(type, delayBetweenTexts);
+    });
+  </script>
 
 </body>
+
 </html>
